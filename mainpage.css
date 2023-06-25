@@ -41,13 +41,14 @@ body {
   border-radius: 7px;
   padding: 8px 22px;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.0;
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   color: rgb(255, 255, 255) !important;
   background: #012640;
   margin-bottom: 10px;
 }
+
 
 
 .buttonround:hover {
