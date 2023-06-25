@@ -19,12 +19,8 @@
   font-style: normal;
 }
 
-.hr {
-    background-color: #363636;
-    width: 100%;
-    height: 1px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+body {
+  font-family: 'Metropolis-SemiBold', sans-serif;
 }
 
 .buttonround {  /* THIS SHITS MAKING ME WANNA DIE BRO HELP */
