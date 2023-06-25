@@ -23,43 +23,32 @@ body {
   font-family: 'Metropolis-SemiBold', sans-serif;
 }
 
-.buttonround {  /* T*/
-    display: inline-block;
-
-    height: 40px;
-
-    margin-right: 10px;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    font-family: Metropolis-Bold, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    border-radius: 7px;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    color: rgb(255, 255, 255) !important;
-    background: #012640;
-    padding: 8px 22px;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    color: rgb(255, 255, 255) !important;
-    background: #012640;
-    padding: 8px 22px;
-    cursor: pointer;
+.buttonround {
+  margin-right: 10px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  font-family: Metropolis-Bold, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  border-radius: 7px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: rgb(255, 255, 255) !important;
+  background: #012640;
+  margin-bottom: 10px;
 }
+
 
 .buttonround:hover {
     background: #011f35;
