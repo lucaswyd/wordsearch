@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Metropolis-SemiBold';
-  src: url('https://github.com/lucaswyd/wordsearch/blob/main/fonts/metropolis.semi-bold.otf?raw=true') format('opentype');
+  src: url('https://lucaswyd.github.io/wordsearch/fonts/metropolis.semi-bold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Metropolis-Medium';
-  src: url('https://github.com/lucaswyd/wordsearch/blob/main/fonts/metropolis.medium.otf?raw=true') format('opentype');
+  src: url('https://lucaswyd.github.io/wordsearch/fonts/metropolis.medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Metropolis-Bold';
-  src: url('https://github.com/lucaswyd/wordsearch/blob/main/fonts/metropolis.bold.otf?raw=true') format('opentype');
+  src: url('https://lucaswyd.github.io/wordsearch/fonts/metropolis.bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
