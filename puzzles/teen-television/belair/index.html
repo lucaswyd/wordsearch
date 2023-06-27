@@ -1,54 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>The Fresh Prince of Bel-Air - WsX</title>
- <!--   <meta content="" name="description">    -->
-<!--    <meta content="" name="keywords">  -->
-  <!--  <meta name="robots" content="noindex"> -->
-
-    <!-- Replace local paths with 'https://krnl.place/' -->
-<!--    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">    -->
-    <link href="https://krnl.place/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://lucaswyd.github.io/wordsearch/krnl-components.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Simpsons Characters Word Search</title>
+    <meta name="description" content="The Simpsons are always a popular topic so this word search puzzle should please many fine players.">
+    <link rel="canonical" href="https://thewordsearch.com/puzzle/13/the-simpsons-characters/">
+    <meta property="og:image" content="https://thewordsearch.com/static/promo/13.png">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="preload" href="https://thewordsearch.com/v4/fonts/Rubik-Minified.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" media="all" href="https://thewordsearch.com/v4/css/17main.css">
+    <link rel="apple-touch-icon" href="https://thewordsearch.com/apple.png">
+    <link rel="icon" sizes="192x192" href="/ico192.png">
+    <link rel="manifest" href="https://thewordsearch.com/manifest.webmanifest">
 </head>
-
-<body id="cardbackground">
-    <main id="main">
-
-        <section class="why-us">
-            <div class="container">
-
+ 
+<body>
+    <script>
+        document.body.className = localStorage.theme || ''
+    </script>
+    <header>
+        <a href="https://thewordsearch.com" title="The Word Search" aria-label="The Word Search">
+            <svg id="logo" role="img">
+                <use xlink:href="https://thewordsearch.com/v4/img/icons.svg#logo" />
+            </svg>
+        </a>
+        <nav>
+            <div class="menu">Menu</div>
+            <a class="iMake" href="/maker/">Word Search Maker</a>
+            <a class="iHome" href="/">More Puzzles</a>
+            <a class="iSearch" href="/search/">Search</a>
+        </nav>
+    </header>
+    <section id="puzzle">
+        <div class="pLeft">
+            <h1>The Simpsons Characters</h1>
+            <div id="gameGrid" class="puzzle-loader"></div>
+            <div id="opt-btns">
+                <a href="https://thewordsearch.com/downloadable/" target="_blank" title="Print the puzzle : The Simpsons Characters" class="dnl-btn"><svg role="img">
+                        <use xlink:href="https://thewordsearch.com/v4/img/icons.svg#download" />
+                    </svg>Download / Print Puzzle</a><button class="settings-btn"><svg role="img">
+                        <use xlink:href="https://thewordsearch.com/v4/img/icons.svg#cog" />
+                    </svg>Puzzle Settings</button><button class="theme-btn"><svg role="img">
+                        <use xlink:href="https://thewordsearch.com/v4/img/icons.svg#switch" />
+                    </svg>Game Theme</button>
+                <a class="smBtn" href="https://thewordsearch.com/contact/bug/" target="_blank"><svg role="img">
+                        <use xlink:href="https://thewordsearch.com/v4/img/icons.svg#bug" />
+                    </svg>Report a bug</a>
             </div>
-        </section>
-
-        <section class="inner-page">
-            <div class="container">
-            </div>
-        </section>
-
-        <section id="choice" class="why-us">
-            <div class="container">
-                <div class="row h-100 justify-content-center align-items-center">
-                    <div class="col-lg-6 text-center">
-                        <div id="wordsearch-board" class="wordsearch-board"></div>
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <ul class="word-list"></ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main><!-- End #main -->
-
-     <script src="script.js"></script>
+            <div class="shares" data-id="13" data-img="https://thewordsearch.com/static/puzzle/word-search-13.png" data-title="The Simpsons Characters"></div>
+            <div class="description">Description</div>
+            <div>The Simpsons are always a popular topic so this word search puzzle should please many fine players.</div>
+        </div>
+      
+        <div class="related">
+            <h4>Other Puzzles</h4>
+            <ul>
+                <li><a href="/puzzle/14/futurama-characters/" title="Futurama Characters Word Search"><img src="/static/thumb/futurama-characters-14.png" alt="Word Search on Futurama Characters"></a></li>
+                <li><a href="/puzzle/15/family-guy-characters/" title="Family Guy Characters Word Search"><img src="/static/thumb/family-guy-characters-15.png" alt="Word Search on Family Guy Characters"></a></li>
+                <li><a href="/puzzle/46/star-trek/" title="Star Trek Word Search"><img src="/static/thumb/star-trek-46.png" alt="Word Search on Star Trek"></a></li>
+                <li><a href="/puzzle/47/stargate/" title="Stargate Word Search"><img src="/static/thumb/stargate-47.png" alt="Word Search on Stargate"></a></li>
+                <li><a href="/puzzle/131/bones/" title="Bones Word Search"><img src="/static/thumb/bones-131.png" alt="Word Search on Bones"></a></li>
+            </ul><a class="rtnCat" href="/cat/television-shows/">View all puzzles in "Television Shows" category</a>
+        </div>
+    </section>
+    <script id="game-data" type="text/plain">~t(ii'C893#yjzne#?%[ij&[jsuzqqv(Cobzcl|iw|&4$}txds'Cb*Jsriw+/)Niwpg%3#Gbzv*.(Lotg%3#Prytz{%3#Gbzpg|&4$Mybuwj(,&Utk)-'Jt{%3#Hneu|w+/)Nz"Fuyot(,&W{wx"0*Pem|ss'5%Ujj(,&[fnmj(,&Xiyu~v*.(Sllm|lw~v(Bui'5%Yjrtn"0*Yrpnij(,&[niyijxs'5%Shrr}'5%Jesq%d}</script>
+    <footer class="main_footer">
+        <a href="/sitemap/">Site Map</a>
+        <a href="/user/privacy/">Privacy Policy</a>
+        <span>© TheWordSearch.com</span>
+        <br>
+        <a href="/printable/">Printable Word Searches</a>
+        <a href="/hangman/">Play Hangman</a>
+    </footer>
+    <script src="https://thewordsearch.com/v4/js/17base.js" defer></script>
 </body>
-
+ 
 </html>
