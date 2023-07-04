@@ -14,12 +14,36 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="https://krnl.place/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://lucaswyd.github.io/wordsearch/krnl-components.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <style>
+        .wordsearch-row {
+            display: flex;
+        }
+
+        .wordsearch-cell {
+            border: 1px solid #000;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body id="cardbackground">
     <main id="main">
+
+        <section class="why-us">
+            <div class="container">
+
+            </div>
+        </section>
+
+        <section class="inner-page">
+            <div class="container">
+            </div>
+        </section>
+
         <section id="choice" class="why-us">
             <div class="container">
                 <div class="row h-100 justify-content-center align-items-center">
@@ -32,27 +56,29 @@
                 </div>
             </div>
         </section>
+
     </main><!-- End #main -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             // Word list
             var words = [
-                'Biology',
+                'Science',
+                'Experiment',
+                'Hypothesis',
                 'Chemistry',
+                'Biology',
                 'Physics',
+                'Microscope',
                 'Astronomy',
-                'Geology',
+                'Laboratory',
+                'Research',
+                'Molecule',
+                'Atom',
                 'Genetics',
-                'Ecology',
-                'Botany',
-                'Microbiology',
-                'Zoology',
-                'Neuroscience',
-                'Paleontology',
-                'Meteorology',
-                'Biochemistry',
-                'Biotechnology'
+                'Evolution',
+                'Ecology'
             ];
 
             // Word search puzzle generator function
@@ -169,18 +195,32 @@
                 for (var i = 0; i < gridSize; i++) {
                     var row = $('<div class="wordsearch-row"></div>');
                     for (var j = 0; j < gridSize; j++) {
-                        var cell = $('<div class="wordsearch-cell"></div>');
-                        cell.text(grid[i][j]);
+                        var cell = $('<div class="wordsearch-cell">' + grid[i][j] + '</div>');
                         row.append(cell);
                     }
                     wordsearchBoard.append(row);
                 }
             }
 
+            // Function to display the word list on the page
+            function displayWordList(words) {
+                var wordList = $('.word-list');
+                wordList.empty();
+
+                for (var i = 0; i < words.length; i++) {
+                    var listItem = $('<li>' + words[i] + '</li>');
+                    wordList.append(listItem);
+                }
+            }
+
             // Generate the word search puzzle
             generateWordSearch(words);
+
+            // Display the word list
+            displayWordList(words);
         });
     </script>
 </body>
 
 </html>
+
