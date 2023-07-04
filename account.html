@@ -59,9 +59,8 @@
 
     </main><!-- End #main -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
+        document.addEventListener("DOMContentLoaded", function() {
             // Word list
             var words = [
                 'Science',
@@ -83,9 +82,6 @@
 
             // Word search puzzle generator function
             function generateWordSearch(words) {
-                // Shuffle the words randomly
-                words = shuffle(words);
-
                 // Word search grid size
                 var gridSize = 12;
 
@@ -189,27 +185,31 @@
             // Function to display the grid on the page
             function displayGrid(grid) {
                 var gridSize = grid.length;
-                var wordsearchBoard = $('#wordsearch-board');
-                wordsearchBoard.empty();
+                var wordsearchBoard = document.getElementById('wordsearch-board');
+                wordsearchBoard.innerHTML = '';
 
                 for (var i = 0; i < gridSize; i++) {
-                    var row = $('<div class="wordsearch-row"></div>');
+                    var row = document.createElement('div');
+                    row.className = 'wordsearch-row';
                     for (var j = 0; j < gridSize; j++) {
-                        var cell = $('<div class="wordsearch-cell">' + grid[i][j] + '</div>');
-                        row.append(cell);
+                        var cell = document.createElement('div');
+                        cell.className = 'wordsearch-cell';
+                        cell.textContent = grid[i][j];
+                        row.appendChild(cell);
                     }
-                    wordsearchBoard.append(row);
+                    wordsearchBoard.appendChild(row);
                 }
             }
 
             // Function to display the word list on the page
             function displayWordList(words) {
-                var wordList = $('.word-list');
-                wordList.empty();
+                var wordList = document.querySelector('.word-list');
+                wordList.innerHTML = '';
 
                 for (var i = 0; i < words.length; i++) {
-                    var listItem = $('<li>' + words[i] + '</li>');
-                    wordList.append(listItem);
+                    var listItem = document.createElement('li');
+                    listItem.textContent = words[i];
+                    wordList.appendChild(listItem);
                 }
             }
 
